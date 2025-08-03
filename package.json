@@ -1,0 +1,76 @@
+{
+    "$schema": "https://www.raycast.com/schemas/extension.json",
+    "name": "sharex-integration",
+    "title": "ShareX Integration",
+    "description": "Quickly trigger ShareX actions like screen capture and file uploads.",
+    "icon": "icon.png",
+    "author": "aabre",
+    "categories": [
+        "Productivity",
+        "Media"
+    ],
+    "license": "MIT",
+    "platforms": [
+        "windows"
+    ],
+    "commands": [
+        {
+            "name": "capture-screen-region",
+            "title": "Capture Screen Region",
+            "description": "Starts a region capture with ShareX",
+            "mode": "no-view",
+            "icon": "region.png"
+        },
+        {
+            "name": "open-screenshots-folder",
+            "title": "Open Screenshots Folder",
+            "description": "Opens the ShareX screenshots folder for the current month",
+            "mode": "no-view",
+            "icon": "openfolder.png"
+        },
+        {
+            "name": "view-recent-screenshots",
+            "title": "View Recent Screenshots",
+            "description": "View and manage recent screenshots",
+            "mode": "view",
+            "icon": "viewrecent.png"
+        }
+    ],
+    "preferences": [
+        {
+            "name": "sharexPath",
+            "title": "ShareX Executable Path",
+            "description": "The full path to your ShareX.exe file",
+            "type": "textfield",
+            "default": "C:\\Program Files\\ShareX\\ShareX.exe",
+            "required": true
+        },
+        {
+            "name": "screenshotsPath",
+            "title": "Screenshots Folder Path",
+            "description": "The root folder where ShareX saves screenshots",
+            "type": "textfield",
+            "default": "C:\\Users\\aabre\\Documents\\ShareX\\Screenshots",
+            "required": true
+        }
+    ],
+    "dependencies": {
+        "@raycast/api": "^1.100.3",
+        "@raycast/utils": "^1.19.1"
+    },
+    "devDependencies": {
+        "@raycast/eslint-config": "^1.0.11",
+        "@types/node": "18.18.4",
+        "@types/react": "19.0.10",
+        "eslint": "^8.57.1",
+        "prettier": "^3.6.2",
+        "typescript": "^5.8.3"
+    },
+    "scripts": {
+        "build": "ray build -e dist",
+        "dev": "ray develop",
+        "fix-lint": "ray lint --fix",
+        "lint": "ray lint",
+        "publish": "ray publish"
+    }
+}
