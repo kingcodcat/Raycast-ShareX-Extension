@@ -72,3 +72,4 @@ This extension provides the following commands:
 This project is licensed under the MIT License.
 
 I am not a developer, I understand somethings but this was made with Gemini-cli, a nice bit of vibe coding.
+Thanks to Joaolucaswork https://github.com/joaolucaswork/raycast-windows-extension-template/ for the template that this extension uses
