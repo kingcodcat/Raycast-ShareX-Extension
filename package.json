@@ -50,7 +50,7 @@
             "title": "Screenshots Folder Path",
             "description": "The root folder where ShareX saves screenshots",
             "type": "textfield",
-            "default": "C:\\Users\\aabre\\Documents\\ShareX\\Screenshots",
+            "default": "C:\\Users\\*\\Documents\\ShareX\\Screenshots",
             "required": true
         }
     ],
